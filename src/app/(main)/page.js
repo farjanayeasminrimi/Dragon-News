@@ -1,3 +1,6 @@
+import { redirect } from "next/navigation";
+
+const defaultCategory = "01";
 export default function Home() {
-  return <div className="container mx-auto grid grid-cols-12 gap-4"></div>;
+  redirect(`/category/${defaultCategory}`);
 }
