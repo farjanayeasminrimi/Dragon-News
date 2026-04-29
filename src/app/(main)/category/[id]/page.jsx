@@ -21,7 +21,7 @@ const CategoryByIdPage = async ({ params }) => {
       <div className=" col-span-6">
         <h2 className="text-xl font-bold mb-4">Dragon News Home</h2>
         {newsById.length > 0 ? (
-          newsById.map((n) => <NewsPage key={n._id} n={n}></NewsPage>)
+          newsById.map((news) => <NewsPage key={news._id} news={news}></NewsPage>)
         ) : (
           <h2 className="text-center font-semibold text-gray-500">No News Available </h2>
         )}
