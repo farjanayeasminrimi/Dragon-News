@@ -59,7 +59,7 @@ const NewsPage = ({ news }) => {
           </div>
 
           <Link href={`/news/${news._id}`}>
-            <button className="btn">See details</button>
+            <button className="btn bg-indigo-500 text-white">See details</button>
           </Link>
         </div>
       </div>
