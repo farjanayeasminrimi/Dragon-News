@@ -41,9 +41,14 @@ const Navbar = () => {
           </button>
         </div>
       ) : (
-        <Link href={"/login"}>
-          <button className="btn bg-indigo-500 text-white">Log In</button>
-        </Link>
+        <div className="flex gap-3 items-center">
+          <Link href={"/login"}>
+            <button className="btn bg-indigo-500 text-white">Log In</button>
+          </Link>
+          <Link href={"/register"}>
+            <button className="btn bg-indigo-500 text-white">Register</button>
+          </Link>
+        </div>
       )}
     </div>
   );

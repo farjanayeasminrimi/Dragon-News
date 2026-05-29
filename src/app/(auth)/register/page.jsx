@@ -100,7 +100,7 @@ const RegisterPage = () => {
             {errors.email && <p className="text-red-500">{errors.email.message}</p>}
           </fieldset>
 
-          <fieldset className="fieldset relative">
+           <fieldset className="fieldset relative">
             <legend className="fieldset-legend">Password</legend>
             <input
               type={isShowPassword ? "text" : "password"}
@@ -111,12 +111,14 @@ const RegisterPage = () => {
               })}
             />
             <span
-              className="absolute right-8 top-4 cursor-pointer"
+              className="absolute right-2 top-4 cursor-pointer"
               onClick={() => setIsShowPassword(!isShowPassword)}
             >
               {isShowPassword ? <FaEye /> : <FaEyeSlash />}
             </span>
-            {errors.password && <p className="text-red-500">{errors.password.message}</p>}
+            {errors.password && (
+              <p className="text-red-500">{errors.password.message}</p>
+            )}
           </fieldset>
 
           <button className="btn w-full bg-slate-800 text-white">Register</button>

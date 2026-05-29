@@ -68,7 +68,7 @@ const LoginPage = () => {
           <fieldset className="fieldset relative">
             <legend className="fieldset-legend">Password</legend>
             <input
-              type="password"
+              type={isShowPassword ? "text" : "password"}
               className="input"
               placeholder="Type here password"
               {...register("password", {
